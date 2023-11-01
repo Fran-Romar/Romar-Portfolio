@@ -1,18 +1,27 @@
 import React, { useState } from "react";
+import { Link } from "react-scroll";
 
 export default function Header() {
   const [navClass, setNavClass] = useState("closeNav");
+  const items = ["Inicio", "Proyectos", "Habilidades", "Sobre mí", "Contacto"];
   return (
     <header>
-      <a href="#">
+      <a href="/">
         <img src="logo-white.png" alt="romar" />
       </a>
       <nav className={navClass}>
-        <a href="#">Inicio</a>
-        <a href="#">Proyectos</a>
-        <a href="#">Habilidades</a>
-        <a href="#">Sobre mí</a>
-        <a href="#">Contacto</a>
+        {items.map((item) => (
+          <Link
+            className="nav-links"
+            key={item}
+            to={`${item}`}
+            smooth={true}
+            duration={500}
+            onClick={() => setNavClass("closeNav")}
+          >
+            {item}
+          </Link>
+        ))}
         <i
           id="times"
           className="fa fa-times"
