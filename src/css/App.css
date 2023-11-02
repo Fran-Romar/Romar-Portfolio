@@ -241,29 +241,32 @@ nav{
 /* Proyectos */
 
 #Proyectos{
-    padding-top: 100px;
+    padding-top: 125px;
+    padding-bottom: 75px;
     font-family: var(--fuente-principal);
     text-align: center;
+
+    animation: desIzq 1s ease-out;
 }
 
 #Proyectos h3{
     font-size: 300%;
     font-weight: 900;
+    margin-bottom: 50px;
 }
 
-#Proyectos h4{
-    font-weight: 600;
-    margin: 10px 0 50px 0;
+.proyect-a{
+    color: white;
+    text-decoration: none;
 }
 
 .proyect-container{
-    /* border: 2px solid var(--secundario); */
     border-radius: 10px;
-    box-shadow: 0 0 5px var(--primario);
+    box-shadow: 0 0 5px var(--secundario);
 
     height: 400px;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     background-position: center;
 
     transition: all 0.7s ease;
@@ -271,6 +274,39 @@ nav{
 
 .proyect-container:hover{
     border-radius: 0 10% 0 10%;
-    box-shadow: 0 0 10px var(--primario);
+    box-shadow: 0 0 10px var(--secundario);
     transform: scale(1.05);
+}
+
+.proyect-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background-color: #0f1329e0;
+    transition: all 0.5s ease;
+}
+
+.proyect-content:hover{
+    border-radius: 0 10% 0 10%;
+    opacity: 1;
+}
+
+.proyect-content h5{
+    padding: 20px 0;
+    font-size: 150%;
+    font-weight: 600;
+}
+
+.proyect-content p{
+    padding: 0 25.5px;
+    font-size: 110%;
+}
+
+.tec-img{
+    width: 12.5%;
 }

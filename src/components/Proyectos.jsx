@@ -1,34 +1,22 @@
 import React from "react";
 
-import { Container, Row, Col } from "react-bootstrap";
+import proyects from "../../data/proyects.json";
+import Proyect from "../components/Proyect";
+
+import { Container, Row } from "react-bootstrap";
 
 export default function Proyectos() {
+  console.log(proyects);
   return (
     <section id="Proyectos">
       <h3>
         <em className="imp-content">Proyetos</em> Desarrollados
       </h3>
-      <Container className="mt-5">
+      <Container className="mt-5 mb-5">
         <Row>
-          <Col md="4">
-            <h4>WeatherApp</h4>
-            <a
-              href="https://romar-weather-app.netlify.app/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <div
-                className="proyect-container"
-                style={{ backgroundImage: 'url("banner-1.png")' }}
-              ></div>
-            </a>
-          </Col>
-          <Col md="4">
-            <h4>FilmFlicks</h4>
-          </Col>
-          <Col md="4">
-            <h4>StyleShop</h4>
-          </Col>
+          {proyects.map((proyect) => (
+            <Proyect proyect={proyect}></Proyect>
+          ))}
         </Row>
       </Container>
     </section>
