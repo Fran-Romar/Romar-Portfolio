@@ -1,17 +1,20 @@
 [
-    {
+    {   
+        "id": 1,
         "name": "WeatherApp",
         "description": "Aplicación web en React para mostrar el clima de ciudades de todo el mundo utilizando datos en tiempo real.",
         "tecs": ["html", "css", "js", "react"],
         "url": "https://romar-weather-app.netlify.app/"
     },
-    {
+    {   
+        "id": 2,
         "name": "FilmFlicks",
         "description": "Aplicación web en React que permite a los usuarios buscar trailers de películas y obtener información relacionada con la misma.",
         "tecs": ["html", "css", "js", "react"],
         "url": "https://romar-filmflicks-app.netlify.app/"
     },
-    {
+    {   
+        "id": 3,
         "name": "StyleShop",
         "description": "Tienda online interactiva en React con funcionalidades de carrito de compras, busqueda de productos, etc",
         "tecs": ["html", "css", "js", "react"],

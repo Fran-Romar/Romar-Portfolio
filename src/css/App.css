@@ -1,8 +1,8 @@
 :root {
     --fuente-principal: 'Poppins', sans-serif;
-    --fuente-secundaria: 'Roboto', sans-serif;;
-    --background-principal: #0B0A1F;
-    --background-secundario: #0f1329;
+    /* --fuente-secundaria: 'Roboto', sans-serif;; */
+    --background-principal: #170344;
+    --background-secundario: #150833;
     --primario: rgba(0, 255, 255, 0.753);
     --secundario: rgba(0, 147, 147, 0.753);
     --terciario: rgba(0, 95, 95, 0.753);
@@ -47,8 +47,8 @@ header{
     width: 65vw;
     z-index: 100;
 
-    background: rgb(11,10,31);
-    background: linear-gradient(180deg, rgba(11,10,31,1) 5%, rgba(255,255,255,0) 100%);
+    background: rgb(23,3,68);
+    background: linear-gradient(180deg, rgba(23,3,68,1) 5%, rgba(255,255,255,0) 100%);
 
     animation: desTop 1s ease-out;
 }
@@ -199,14 +199,18 @@ nav{
 }
 
 #Inicio p{
-    font-family: var(--fuente-secundaria);
-    font-size: 110%;
+    font-size: 100%;
     font-weight: 500;
     margin-top: 20px;
 }
 
 .imp-content{
     color: var(--primario);
+}
+
+.em-title{
+    color: var(--primario);
+    font-style: normal;
 }
 
 .inicio-footer{
@@ -287,7 +291,7 @@ nav{
     width: 100%;
     height: 100%;
     opacity: 0;
-    background-color: #0f1329e0;
+    background-color: #150833c5;
     transition: all 0.5s ease;
 }
 
@@ -309,4 +313,61 @@ nav{
 
 .tec-img{
     width: 12.5%;
+}
+
+/* Habilidades */
+
+#Habilidades{
+    font-family: var(--fuente-principal);
+    text-align: center;
+
+    animation: desIzq 1s ease-out;
+}
+
+#Habilidades h3{
+    font-size: 300%;
+    font-weight: 900;
+}
+
+.habilities-container{
+    margin: 50px 0 30px 0;
+}
+
+.hab-img{
+    width: 12.5%;
+    border-radius: 50%;
+    border: 3.5px solid var(--secundario);
+    background-color: #150833a8;
+    margin: 10px 25px;
+
+    min-height: 125px;
+    padding: 10px;
+
+    transition: all 0.3s ease;
+}
+
+.hab-img:hover{
+    transform: scale(1.1);
+    box-shadow: 0 0 5px var(--terciario);
+    transform: translateY(-5%);
+}
+
+/* Sobre mí */
+
+#Sobremí{
+    font-family: var(--fuente-principal);
+    text-align: center;
+
+    animation: desIzq 1s ease-out;
+}
+
+#Sobremí h3{
+    font-size: 300%;
+    font-weight: 900;
+    margin-bottom: 50px;
+}
+
+.em-font{
+    font-size: 110%;
+    font-style: normal;
 }

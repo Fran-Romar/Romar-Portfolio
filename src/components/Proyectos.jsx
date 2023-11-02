@@ -10,12 +10,12 @@ export default function Proyectos() {
   return (
     <section id="Proyectos">
       <h3>
-        <em className="imp-content">Proyetos</em> Desarrollados
+        <em className="em-title">Proyetos</em> Desarrollados
       </h3>
       <Container className="mt-5 mb-5">
         <Row>
           {proyects.map((proyect) => (
-            <Proyect proyect={proyect}></Proyect>
+            <Proyect key={proyect.id} proyect={proyect}></Proyect>
           ))}
         </Row>
       </Container>

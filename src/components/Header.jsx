@@ -14,7 +14,7 @@ export default function Header() {
           <Link
             className="nav-links"
             key={item}
-            to={`${item}`}
+            to={`${item.replace(/\s/g, "")}`}
             smooth={true}
             duration={500}
             onClick={() => setNavClass("closeNav")}
