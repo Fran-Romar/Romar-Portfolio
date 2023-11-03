@@ -320,6 +320,7 @@ nav{
 #Habilidades{
     font-family: var(--fuente-principal);
     text-align: center;
+    padding: 150px 0;
 
     animation: desIzq 1s ease-out;
 }
@@ -357,6 +358,8 @@ nav{
 #Sobremí{
     font-family: var(--fuente-principal);
     text-align: center;
+
+    padding: 100px 0 200px 0;
 
     animation: desIzq 1s ease-out;
 }
