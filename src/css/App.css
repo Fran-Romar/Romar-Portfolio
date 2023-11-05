@@ -359,7 +359,7 @@ nav{
     font-family: var(--fuente-principal);
     text-align: center;
 
-    padding: 100px 0 200px 0;
+    padding: 240px 0 230px 0;
 
     animation: desIzq 1s ease-out;
 }
@@ -373,4 +373,59 @@ nav{
 .em-font{
     font-size: 110%;
     font-style: normal;
+}
+
+/* Contacto */
+
+#Contacto{
+    font-family: var(--fuente-principal);
+    text-align: center;
+
+    padding-top: 100px;
+
+    animation: desIzq 1s ease-out;
+}
+
+#Contacto h3{
+    font-size: 300%;
+    font-weight: 900;
+}
+
+form{
+    margin: 50px;
+    padding: 0 100px;
+}
+
+form div{
+    margin: 20px 0;
+}
+
+form div label{
+    font-size: 125%;
+    font-weight: 600;
+    margin-bottom: 7.5px;
+}
+
+form div input, textarea{
+    padding: 5px 10px;
+    border: 2.5px solid var(--secundario);
+    background-color: var(--background-secundario);
+    border-radius: 10px;
+    color: white;
+    width: 100%;
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+form button{
+    border: none;
+    background-color: var(--secundario);
+    border-radius: 10px;
+    font-weight: 600;
+    padding: 10px 17.5px;
+    color: var(--blanco);
+}
+
+form button:hover{
+    background-color: var(--terciario);
 }
