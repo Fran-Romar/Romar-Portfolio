@@ -429,3 +429,62 @@ form button{
 form button:hover{
     background-color: var(--terciario);
 }
+
+.confirm-form-container {
+    opacity: 0;
+    transform: translateX(100vw);
+    transition: opacity 0.3s, transform 0.3s;
+
+    position: fixed;
+    top: 35%;
+    left: 28.5%;
+
+    background-color: var(--background-secundario);
+    border: 3px solid var(--secundario);
+    border-radius: 10px;
+    box-shadow: 0 0 10px black;
+    padding: 30px 50px;
+}
+  
+.confirm-form-container.show {
+    opacity: 1;
+    transform: translateX(0);
+    animation: fadeIn 0.5s ease-out;
+}
+
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateX(-100vw);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+}
+
+.confirm-form-container img{
+    width: 20%;
+    height: auto;
+
+    border: 5px solid green;
+    border-radius: 50%;
+    padding: 15px;
+}
+
+.confirm-form-container p{
+    margin-top: 40px;
+    font-size: 125%;
+}
+
+.confirm-form-container i{
+    position: fixed;
+    top: 10px;
+    right: 10px;
+
+    font-size: 175%;
+}
+
+.confirm-form-container i:hover{
+    color: var(--secundario);
+}

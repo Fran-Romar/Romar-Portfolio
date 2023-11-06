@@ -1,29 +1,56 @@
-import React from "react";
+import React, { useRef, useState } from "react";
+import emailjs from "@emailjs/browser";
+
+import ConfirmForm from "./ConfirmForm";
 
 export default function Contacto() {
+  const form = useRef();
+  const [show, setShow] = useState(false);
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+    setShow(true);
+    // emailjs
+    //   .sendForm(
+    //     "service_vc42bn4",
+    //     "template_1m456xv",
+    //     form.current,
+    //     "rwfwAQXBd-MMmnWKV"
+    //   )
+    //   .then(
+    //     (result) => {
+    //       console.log(result.text);
+    //       setShow(true);
+    //     },
+    //     (error) => {
+    //       console.log(error.text);
+    //     }
+    //   );
+  };
   return (
     <section id="Contacto">
       <h3>
         <em className="em-title">Contacto</em>
       </h3>
-      <form>
+      <form ref={form} onSubmit={sendEmail}>
         <div>
-          <label htmlFor="name">Nombre</label>
+          <label htmlFor="user_name">Nombre</label>
           <br />
-          <input type="text" name="name" id="name" />
+          <input type="text" name="user_name" id="user_name" />
         </div>
         <div>
-          <label htmlFor="email">Correo</label>
+          <label htmlFor="user_email">Correo</label>
           <br />
-          <input type="email" name="email" id="email" />
+          <input type="email" name="user_email" id="user_email" />
         </div>
         <div>
-          <label htmlFor="asunto">Asunto</label>
+          <label htmlFor="message">Asunto</label>
           <br />
-          <textarea name="asunto" id="asunto" cols="30" rows="7"></textarea>
+          <textarea name="message" id="message" cols="30" rows="7"></textarea>
         </div>
         <button type="submit">Enviar</button>
       </form>
+      <ConfirmForm show={show} setShow={setShow}></ConfirmForm>
     </section>
   );
 }
