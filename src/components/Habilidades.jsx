@@ -1,5 +1,7 @@
 import React from "react";
 
+import "../css/Habilidades.css";
+
 export default function Habilidades() {
   const habilities = [
     "html",

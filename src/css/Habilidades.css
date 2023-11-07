@@ -1,0 +1,58 @@
+/* Habilidades */
+
+#Habilidades{
+    font-family: var(--fuente-principal);
+    text-align: center;
+    padding: 150px 0;
+
+    animation: desIzq 1s ease-out;
+}
+
+#Habilidades h3{
+    font-size: 300%;
+    font-weight: 900;
+}
+
+.habilities-container{
+    margin: 50px 0 30px 0;
+}
+
+.hab-img{
+    width: 125px;
+    border-radius: 50%;
+    border: 3.5px solid var(--secundario);
+    background-color: #150833a8;
+    margin: 10px 25px;
+
+    min-height: 125px;
+    padding: 10px;
+
+    transition: all 0.3s ease;
+}
+
+.hab-img:hover{
+    transform: scale(1.1);
+    box-shadow: 0 0 5px var(--terciario);
+    transform: translateY(-5%);
+}
+
+/* Media Query */
+
+@media (max-width: 991.5px){
+    #Habilidades{
+        padding: 120px 0;
+    }
+}
+
+@media (max-width: 564.5px){
+    #Habilidades h3{
+        font-size: 250%;
+    }    
+}
+
+@media (max-width: 389.5px){
+    .hab-img{
+        margin: 10px 15px;
+        min-height: 125px;  
+    }
+}

@@ -1,0 +1,126 @@
+/* Header */
+
+@keyframes desTop {
+    from {
+      transform: translateY(-100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 25px 0 10px 0;
+
+    position: fixed;
+    width: 65vw;
+    z-index: 100;
+
+    background: rgb(23,3,68);
+    background: linear-gradient(180deg, rgba(23,3,68,1) 5%, rgba(255,255,255,0) 100%);
+
+    animation: desTop 1s ease-out;
+}
+
+@media(max-width: 1010px){
+    body{
+        width: min(75vw, 100rem);
+    }
+    header{
+        width: 75vw;
+    }
+}
+
+header img{
+    padding-top: 10px;
+    width: 90px;
+    transition: all 0.5s ease;
+}
+
+header img:hover{
+    transform: scale(1.1);
+}
+
+#bars, #times{
+    display: none;
+    transition: all 0.3s ease;
+}
+
+#bars:hover, #times:hover{
+    color: var(--primario);
+}
+
+nav{
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+    white-space: nowrap;
+}
+
+.nav-links{
+    text-decoration: none;
+    color: var(--blanco);
+    font-size: 110%;
+    cursor: pointer;
+}
+
+.nav-links:hover{
+    color: var(--primario);
+}
+
+/* Media Query */
+
+@media(max-width: 806px){
+    #bars{
+        display: block;
+        font-size: 150%;
+    }
+
+    #times{
+        display: block;
+        font-size: 150%;
+        position: absolute;
+        top: 5%;
+        right: 11.5%;
+    }
+
+    nav{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        background-color: var(--background-secundario);
+        transform: translateY(-125vh);
+        transition: 1s ease;
+        z-index: 1000;
+        font-size: 125%;
+    }
+    
+    .closeNav{
+        transform: translateY(-125vh);
+    }
+
+    .openNav{
+        transform: none;
+    }
+}
+
+@media (max-width: 564.5px){
+    header{
+        width: 90%;
+    }
+
+    #times{
+        right: 5%;
+    }
+}

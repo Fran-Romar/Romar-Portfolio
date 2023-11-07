@@ -4,6 +4,7 @@ import proyects from "../../data/proyects.json";
 import Proyect from "../components/Proyect";
 
 import { Container, Row } from "react-bootstrap";
+import "../css/Proyectos.css";
 
 export default function Proyectos() {
   console.log(proyects);

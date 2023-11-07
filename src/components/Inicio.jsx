@@ -1,6 +1,8 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 
+import "../css/Inicio.css";
+
 export default function Inicio() {
   const descargarCV = () => {
     const url = "/CV Francisco Romar.pdf";

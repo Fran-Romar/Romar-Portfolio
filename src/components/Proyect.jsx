@@ -17,7 +17,7 @@ export default function Proyect({ proyect }) {
           style={{ backgroundImage: `url("${proyect.name}.png")` }}
         >
           <div className="proyect-content">
-            <h5>{proyect.name}</h5>
+            <h5 className="proyect-h5">{proyect.name}</h5>
             <p>{proyect.description}</p>
             <div className="proyect-content-tecs">
               {proyect.tecs.map((tec) => (
@@ -27,6 +27,20 @@ export default function Proyect({ proyect }) {
           </div>
         </div>
       </a>
+      <div className="proyect-out-content">
+        <h5 className="proyect-h5">
+          <a href={proyect.url} target="_blank">
+            {proyect.name}
+          </a>
+        </h5>
+        <p className="proyect-p">{proyect.description}</p>
+        <div className="proyect-content-tecs">
+          {proyect.tecs.map((tec) => (
+            <img src={`${tec}.png`} alt={tec} className="tec-img" />
+          ))}
+        </div>
+        <hr />
+      </div>
     </Col>
   );
 }

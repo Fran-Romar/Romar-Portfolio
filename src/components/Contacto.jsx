@@ -3,6 +3,8 @@ import emailjs from "@emailjs/browser";
 
 import ConfirmForm from "./ConfirmForm";
 
+import "../css/Contacto.css";
+
 export default function Contacto() {
   const form = useRef();
   const [show, setShow] = useState(false);
@@ -10,22 +12,22 @@ export default function Contacto() {
   const sendEmail = (e) => {
     e.preventDefault();
     setShow(true);
-    // emailjs
-    //   .sendForm(
-    //     "service_vc42bn4",
-    //     "template_1m456xv",
-    //     form.current,
-    //     "rwfwAQXBd-MMmnWKV"
-    //   )
-    //   .then(
-    //     (result) => {
-    //       console.log(result.text);
-    //       setShow(true);
-    //     },
-    //     (error) => {
-    //       console.log(error.text);
-    //     }
-    //   );
+    emailjs
+      .sendForm(
+        "service_vc42bn4",
+        "template_1m456xv",
+        form.current,
+        "rwfwAQXBd-MMmnWKV"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          setShow(true);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
   };
   return (
     <section id="Contacto">

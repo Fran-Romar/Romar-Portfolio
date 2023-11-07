@@ -1,0 +1,39 @@
+/* Sobre mí */
+
+#Sobremí{
+    font-family: var(--fuente-principal);
+    text-align: center;
+
+    padding: 240px 0 230px 0;
+
+    animation: desIzq 1s ease-out;
+}
+
+#Sobremí h3{
+    font-size: 300%;
+    font-weight: 900;
+    margin-bottom: 50px;
+}
+
+.em-font{
+    font-size: 110%;
+    font-style: normal;
+}
+
+/* Media Query */
+
+@media (max-width: 991.5px){
+    #Sobremí{
+        padding: 175px 0 75px 0;
+    }
+}
+
+@media (max-width: 564.5px){
+    #Sobremí{
+        padding: 150px 0;
+    }
+
+    #Sobremí h3{
+        font-size: 250%;
+    }    
+}

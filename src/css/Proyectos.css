@@ -1,0 +1,141 @@
+/* Proyectos */
+
+#Proyectos{
+    padding: 125px 0 75px 0;
+    font-family: var(--fuente-principal);
+    text-align: center;
+
+    animation: desIzq 1s ease-out;
+}
+
+#Proyectos h3{
+    font-size: 300%;
+    font-weight: 900;
+    margin-bottom: 50px;
+}
+
+.proyect-a{
+    color: white;
+    text-decoration: none;
+}
+
+.proyect-container{
+    border-radius: 10px;
+    box-shadow: 0 0 5px var(--secundario);
+
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    transition: all 0.7s ease;
+}
+
+.proyect-container:hover{
+    border-radius: 0 10% 0 10%;
+    box-shadow: 0 0 10px var(--secundario);
+    transform: scale(1.05);
+}
+
+.proyect-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    width: 100%;
+    height: 100%;
+    padding: 0 20px;
+    opacity: 0;
+    background-color: #150833c5;
+    transition: all 0.5s ease;
+}
+
+.proyect-content:hover{
+    border-radius: 0 10% 0 10%;
+    opacity: 1;
+}
+
+.proyect-out-content{
+    display: none;
+}
+
+.proyect-out-content hr{
+    border: 1px solid var(--primario);
+}
+
+.proyect-h5{
+    padding: 20px 0;
+    font-size: 150%;
+    font-weight: 600;
+    color: var(--primario);
+}
+
+.proyect-h5 a{
+    text-decoration: none;
+    color: var(--primario);
+}
+
+.proyect-p{
+    padding: 0 25.5px;
+    font-size: 110%;
+}
+
+.tec-img{
+    width: 12.5%;
+}
+
+/* Media Query */
+
+@media (max-width: 991.5px){
+    #Proyectos{
+        padding: 100px 0 0 0;
+    }
+
+    #Proyectos .col-md-4{
+        margin-bottom: 25px;
+    }
+
+    .proyect-container{
+        height: 375px;
+    }
+}
+
+@media (max-width: 767.5px){
+    .proyect-container{
+        height: 500px;
+
+        border-radius: 0 10% 0 10%;
+        box-shadow: none;
+    }
+
+    .proyect-container:hover{
+        border-radius: none;
+        box-shadow: none;
+        transform: none;
+    }
+    
+    .proyect-content{
+        display: none;
+    }
+
+    .proyect-content:hover{
+        border-radius: none;
+        opacity: 0;
+    }
+
+    .proyect-out-content{
+        display: block;
+        margin-top: 10px 0 5px 0;
+    }
+}
+
+@media (max-width: 564.5px){
+    #Proyectos h3{
+        font-size: 250%;
+    }
+
+    .proyect-container{
+        height: 425px;
+    }
+}

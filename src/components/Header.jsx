@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { Link } from "react-scroll";
 
+import "../css/Header.css";
+
 export default function Header() {
   const [navClass, setNavClass] = useState("closeNav");
   const items = ["Inicio", "Proyectos", "Habilidades", "Sobre mí", "Contacto"];

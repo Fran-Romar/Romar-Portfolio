@@ -1,5 +1,7 @@
 import React from "react";
 
+import "../css/SobreMi.css";
+
 export default function SobreMi() {
   return (
     <section id="Sobremí">
