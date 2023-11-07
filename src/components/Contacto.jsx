@@ -9,22 +9,23 @@ export default function Contacto() {
 
   const sendEmail = (e) => {
     e.preventDefault();
-    emailjs
-      .sendForm(
-        "service_vc42bn4",
-        "template_1m456xv",
-        form.current,
-        "rwfwAQXBd-MMmnWKV"
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-          setShow(true);
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
+    setShow(true);
+    // emailjs
+    //   .sendForm(
+    //     "service_vc42bn4",
+    //     "template_1m456xv",
+    //     form.current,
+    //     "rwfwAQXBd-MMmnWKV"
+    //   )
+    //   .then(
+    //     (result) => {
+    //       console.log(result.text);
+    //       setShow(true);
+    //     },
+    //     (error) => {
+    //       console.log(error.text);
+    //     }
+    //   );
   };
   return (
     <section id="Contacto">

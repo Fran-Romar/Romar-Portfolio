@@ -6,12 +6,12 @@ export default function Footer() {
     <footer>
       <Container>
         <Row>
-          <Col md="4">
+          <Col md="4" className="text-center">
             <a href="/">
               <img src="logo-white.png" alt="romar" />
             </a>
           </Col>
-          <Col md="4">
+          <Col md="4" className="text-center">
             <div className="footer-content">
               <p>
                 <em>Transformando ideas en experiencias.</em>
@@ -20,7 +20,7 @@ export default function Footer() {
               </p>
             </div>
           </Col>
-          <Col md="4">
+          <Col md="4" className="text-center">
             <div className="footer-rrss">
               <a
                 href="https://github.com/Fran-Romar"
