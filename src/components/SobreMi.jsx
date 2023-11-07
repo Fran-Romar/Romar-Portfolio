@@ -12,7 +12,7 @@ export default function SobreMi() {
         <em className="imp-content">Ingeniería Informática</em> y un apasionado
         desarrollador web. Mi pasión por crear experiencias digitales asombrosas
         me ha llevado a explorar el emocionante mundo del{" "}
-        <em className="imp-content">desarrollo web</em>. Con un enfoque en la
+        <em className="imp-content">desarrollo web</em>. Con un enfoque en la{" "}
         <em className="imp-content">innovación</em> y la{" "}
         <em className="imp-content">creatividad</em>, disfruto transformando
         ideas en sitios web dinámicos y atractivos.

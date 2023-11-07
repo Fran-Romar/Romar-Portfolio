@@ -245,8 +245,7 @@ nav{
 /* Proyectos */
 
 #Proyectos{
-    padding-top: 125px;
-    padding-bottom: 75px;
+    padding: 125px 0 75px 0;
     font-family: var(--fuente-principal);
     text-align: center;
 
@@ -417,6 +416,14 @@ form div input, textarea{
     text-align: center;
 }
 
+form div input:hover{
+    box-shadow: 0 0 5px var(--terciario);
+}
+
+form div textarea:hover{
+    box-shadow: 0 0 5px var(--terciario);
+}
+
 form button{
     border: none;
     background-color: var(--secundario);
@@ -487,4 +494,120 @@ form button:hover{
 
 .confirm-form-container i:hover{
     color: var(--secundario);
+}
+
+/* Footer */
+
+footer{
+    padding: 50px 0;
+}
+
+footer img{
+    padding-top: 10px;
+    width: 90px;
+    transition: all 0.5s ease;
+}
+
+.footer-content{
+    text-align: center;
+    font-size: 120%;
+}
+
+.footer-content em{
+    font-size: 95%;
+}
+
+.footer-rrss{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    float: inline-end;
+
+    height: 100%;
+}
+
+.footer-rrss i{
+    font-size: 200%;
+    margin: 20px;
+    color: white;
+}
+
+.footer-rrss i:hover{
+    color: var(--secundario);
+}
+
+/* Media Query */
+
+@media (max-width: 991.5px){
+
+    /* Inicio */
+
+    #Inicio{
+        padding: 100px 0 40px 0;
+    }
+    .inicio-img-container{
+        padding: 0;
+        display: flex;
+        justify-content: center;
+    }
+    .inicio-img{
+        width: 70%;
+        height: 100%;
+    }
+    .inicio-footer i{
+        float: inline-end;
+        margin: 15px;
+    }
+    .button-cv{
+        margin-top: 0;
+        font-weight: 500;
+    }
+}
+
+@media (max-width: 991.5px){
+
+    /* Proyectos*/
+
+    #Proyectos{
+        padding: 100px 0 0 0;
+    }
+
+    #Proyectos .col-md-4{
+        margin-bottom: 25px;
+    }
+
+    .proyect-container{
+        height: 500px;
+    }
+}
+
+@media (max-width: 564.5px){
+
+    /* Inicio */
+
+    body{
+        width: 90%;
+    }
+    header{
+        width: 90%;
+    }
+    #Inicio{
+        padding: 50px 0 40px 0;
+    }
+    #Inicio h1{
+        font-size: 200%;
+    }
+    #Inicio h2{
+        font-size: 150%;
+    }
+    .inicio-img{
+        width: 225px;
+    }
+    .button-cv{
+        font-size: 80%;
+    }
+    .inicio-footer i{
+        font-size: 150%;
+    }
 }
